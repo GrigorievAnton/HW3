@@ -11,39 +11,39 @@ import java.util.Objects;
 import java.util.function.Function;
 
 /**
- * Правила выполнения домашнего задания:
+ * РџСЂР°РІРёР»Р° РІС‹РїРѕР»РЅРµРЅРёСЏ РґРѕРјР°С€РЅРµРіРѕ Р·Р°РґР°РЅРёСЏ:
  *
- * 1. Вся работа выполняется в файле доамашнего задания
- *      Если вас просят создать класс - его надо создать вложенным, т.е. внутри класса HomeWorkN
- *      вы создаете класс MyClass {} (все в одном файле)
- * 2. Задание считается выполненным если все тесты пройдены.
- *      Тест выполнен если напротив него находится знак ?
- * 3. Что бы запустить тесты нажмите значек запуска кода напротив мтода main.
- *      ??ВАЖНО?? Вся работа в модкле ведется на JDK-17, перед запуском скачайте его и установите
- *      правильный JDK и уровень языка в Settings -> Project Structure
+ * 1. Р’СЃСЏ СЂР°Р±РѕС‚Р° РІС‹РїРѕР»РЅСЏРµС‚СЃСЏ РІ С„Р°Р№Р»Рµ РґРѕР°РјР°С€РЅРµРіРѕ Р·Р°РґР°РЅРёСЏ
+ *      Р•СЃР»Рё РІР°СЃ РїСЂРѕСЃСЏС‚ СЃРѕР·РґР°С‚СЊ РєР»Р°СЃСЃ - РµРіРѕ РЅР°РґРѕ СЃРѕР·РґР°С‚СЊ РІР»РѕР¶РµРЅРЅС‹Рј, С‚.Рµ. РІРЅСѓС‚СЂРё РєР»Р°СЃСЃР° HomeWorkN
+ *      РІС‹ СЃРѕР·РґР°РµС‚Рµ РєР»Р°СЃСЃ MyClass {} (РІСЃРµ РІ РѕРґРЅРѕРј С„Р°Р№Р»Рµ)
+ * 2. Р—Р°РґР°РЅРёРµ СЃС‡РёС‚Р°РµС‚СЃСЏ РІС‹РїРѕР»РЅРµРЅРЅС‹Рј РµСЃР»Рё РІСЃРµ С‚РµСЃС‚С‹ РїСЂРѕР№РґРµРЅС‹.
+ *      РўРµСЃС‚ РІС‹РїРѕР»РЅРµРЅ РµСЃР»Рё РЅР°РїСЂРѕС‚РёРІ РЅРµРіРѕ РЅР°С…РѕРґРёС‚СЃСЏ Р·РЅР°Рє ?
+ * 3. Р§С‚Рѕ Р±С‹ Р·Р°РїСѓСЃС‚РёС‚СЊ С‚РµСЃС‚С‹ РЅР°Р¶РјРёС‚Рµ Р·РЅР°С‡РµРє Р·Р°РїСѓСЃРєР° РєРѕРґР° РЅР°РїСЂРѕС‚РёРІ РјС‚РѕРґР° main.
+ *      ??Р’РђР–РќРћ?? Р’СЃСЏ СЂР°Р±РѕС‚Р° РІ РјРѕРґРєР»Рµ РІРµРґРµС‚СЃСЏ РЅР° JDK-17, РїРµСЂРµРґ Р·Р°РїСѓСЃРєРѕРј СЃРєР°С‡Р°Р№С‚Рµ РµРіРѕ Рё СѓСЃС‚Р°РЅРѕРІРёС‚Рµ
+ *      РїСЂР°РІРёР»СЊРЅС‹Р№ JDK Рё СѓСЂРѕРІРµРЅСЊ СЏР·С‹РєР° РІ Settings -> Project Structure
  */
 public class  HomeWork3 {
 
     /**
-     * Задание:
+     * Р—Р°РґР°РЅРёРµ:
      *
-     * 1. Реализуйте метод raiseException(ниже) который принимет число и выбрасывает исключения:
-     *          если число 1 то выбросить SocketException
-     *          если число 2 то выбросить ClassNotFoundException
-     *          если число 3 то выбросить AccessDeniedException
-     *          если число 4 то выбросить ExportException
+     * 1. Р РµР°Р»РёР·СѓР№С‚Рµ РјРµС‚РѕРґ raiseException(РЅРёР¶Рµ) РєРѕС‚РѕСЂС‹Р№ РїСЂРёРЅРёРјРµС‚ С‡РёСЃР»Рѕ Рё РІС‹Р±СЂР°СЃС‹РІР°РµС‚ РёСЃРєР»СЋС‡РµРЅРёСЏ:
+     *          РµСЃР»Рё С‡РёСЃР»Рѕ 1 С‚Рѕ РІС‹Р±СЂРѕСЃРёС‚СЊ SocketException
+     *          РµСЃР»Рё С‡РёСЃР»Рѕ 2 С‚Рѕ РІС‹Р±СЂРѕСЃРёС‚СЊ ClassNotFoundException
+     *          РµСЃР»Рё С‡РёСЃР»Рѕ 3 С‚Рѕ РІС‹Р±СЂРѕСЃРёС‚СЊ AccessDeniedException
+     *          РµСЃР»Рё С‡РёСЃР»Рѕ 4 С‚Рѕ РІС‹Р±СЂРѕСЃРёС‚СЊ ExportException
      *
-     *  2. Реализуйте метод catchException который вызывает raiseException затем ловит каждое
-     *     исключение отдельным блоком catch и возвращяет его название:
-     *          для SocketException вернуть строку "SocketException"
-     *          для ClassNotFoundException вернуть строку "ClassNotFoundException"
-     *          для AccessDeniedException вернуть строку "AccessDeniedException"
-     *          для ExportException вернуть строку "ExportException"
+     *  2. Р РµР°Р»РёР·СѓР№С‚Рµ РјРµС‚РѕРґ catchException РєРѕС‚РѕСЂС‹Р№ РІС‹Р·С‹РІР°РµС‚ raiseException Р·Р°С‚РµРј Р»РѕРІРёС‚ РєР°Р¶РґРѕРµ
+     *     РёСЃРєР»СЋС‡РµРЅРёРµ РѕС‚РґРµР»СЊРЅС‹Рј Р±Р»РѕРєРѕРј catch Рё РІРѕР·РІСЂР°С‰СЏРµС‚ РµРіРѕ РЅР°Р·РІР°РЅРёРµ:
+     *          РґР»СЏ SocketException РІРµСЂРЅСѓС‚СЊ СЃС‚СЂРѕРєСѓ "SocketException"
+     *          РґР»СЏ ClassNotFoundException РІРµСЂРЅСѓС‚СЊ СЃС‚СЂРѕРєСѓ "ClassNotFoundException"
+     *          РґР»СЏ AccessDeniedException РІРµСЂРЅСѓС‚СЊ СЃС‚СЂРѕРєСѓ "AccessDeniedException"
+     *          РґР»СЏ ExportException РІРµСЂРЅСѓС‚СЊ СЃС‚СЂРѕРєСѓ "ExportException"
      */
 
     public static void raiseException(Integer exceptionId) throws SocketException, ClassNotFoundException, AccessDeniedException, ExportException {
-        // Подсказка: throws Exception в итоге надо поменять на перечисление имен исключений
-        // Напиши свой код тут для задания 1
+        // РџРѕРґСЃРєР°Р·РєР°: throws Exception РІ РёС‚РѕРіРµ РЅР°РґРѕ РїРѕРјРµРЅСЏС‚СЊ РЅР° РїРµСЂРµС‡РёСЃР»РµРЅРёРµ РёРјРµРЅ РёСЃРєР»СЋС‡РµРЅРёР№
+        // РќР°РїРёС€Рё СЃРІРѕР№ РєРѕРґ С‚СѓС‚ РґР»СЏ Р·Р°РґР°РЅРёСЏ 1
         if(exceptionId == 1) {
             throw new SocketException();
         }
@@ -59,7 +59,7 @@ public class  HomeWork3 {
     }
 
     public static String catchException(Integer integer) {
-        // Напиши свой код тут для задания 2
+        // РќР°РїРёС€Рё СЃРІРѕР№ РєРѕРґ С‚СѓС‚ РґР»СЏ Р·Р°РґР°РЅРёСЏ 2
         try {
             raiseException(integer);
         } catch (SocketException e) {
@@ -79,7 +79,7 @@ public class  HomeWork3 {
         testSecondTask();
     }
 
-    /* Техническая секция - сюда писать ничего не надо */
+    /* РўРµС…РЅРёС‡РµСЃРєР°СЏ СЃРµРєС†РёСЏ - СЃСЋРґР° РїРёСЃР°С‚СЊ РЅРёС‡РµРіРѕ РЅРµ РЅР°РґРѕ */
 
     private static final Map<Integer, Class<? extends Exception>> classesCorrelation = Map.of(
             1, SocketException.class,
@@ -94,7 +94,7 @@ public class  HomeWork3 {
         for (Integer exceptionId : classesCorrelation.keySet().stream().sorted().toList()) {
             try {
                 raiseException(exceptionId);
-                printTestCase(exceptionId, "Должна была выкинуться ошибка", "Ошибка не выкинулась", 45);
+                printTestCase(exceptionId, "Р”РѕР»Р¶РЅР° Р±С‹Р»Р° РІС‹РєРёРЅСѓС‚СЊСЃСЏ РѕС€РёР±РєР°", "РћС€РёР±РєР° РЅРµ РІС‹РєРёРЅСѓР»Р°СЃСЊ", 45);
             } catch(Exception e) {
                 printTestCase(exceptionId, classesCorrelation.get(exceptionId).toString(), e.getClass().toString(), 45);
             }
@@ -149,7 +149,7 @@ public class  HomeWork3 {
         Function<String, String> green = str -> "\u001B[34m" + str + "\u001B[0m";
         Function<String, String> yellow = str -> "\u001B[33m" + str + "\u001B[0m";
         System.out.print( "TEST CASE " + constLen(String.valueOf(n), 4));
-        System.out.print( "Ожидание: " + yellow.apply(constLen(exp, minLen)) + " Реальность: " + green.apply(constLen(act, minLen) + " "));
+        System.out.print( "РћР¶РёРґР°РЅРёРµ: " + yellow.apply(constLen(exp, minLen)) + " Р РµР°Р»СЊРЅРѕСЃС‚СЊ: " + green.apply(constLen(act, minLen) + " "));
         if (Objects.equals(exp, act)) System.out.print("?"); else System.out.print("?");
         System.out.println();
     }
